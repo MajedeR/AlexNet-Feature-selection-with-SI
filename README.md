@@ -8,6 +8,12 @@ In AlexNet_model.ipynb, we build the AlexNET model by adding pooling layers afte
 The final accuracy of the network (AlexNet model with the addition of pooling layers, training and evaluation with the mentioned small dataset) on the test data: 96.78%
 
 In "Dimension reduction using SI.ipynb" section "Part1" we have given the mentioned data set as input to the pre-trained network in "AlexNet model.ipynb" and then we have started Selection Forward, like this We select the features of the last layer of the network before the classification layer in order until the "SI" value reaches the maximum value and the SI value does not change significantly with the increase in the number of features.
+
 ![image](https://github.com/user-attachments/assets/2aed5fa2-f95e-4e38-9398-c96b4ad9b0a1)
+
+As it is clear from the above diagram, "SI" occurs in the maximum number of 288 features. (Although we can easily say that there is no noticeable change in the "SI" value after 40 features, but to increase the accuracy, we choose the point where the maximum SI occurs.)
+So we can consider the effective features of the network as its first 288 features
+
+In the "PART2" section, we remove the classifier layers from the current model (the trained ALEXNET model) and this time we apply the classifier to the features obtained in the "PART1" section and train the classifier
 
 
