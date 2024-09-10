@@ -19,5 +19,15 @@ In the "PART2" section, we remove the classifier layers from the current model (
 The final accuracy of the new model on the test data: 96.14%
 
 
+In "Each_Layer_SI.ipynb", the values ​​of "SI" in each layer are calculated in the trained "AlexNet" model saved in "AlexNet_model.ipynb".
+The work process is that in each layer of this network, using the mentioned dataset, "SI" is calculated and the graph of the change of "SI" in each layer is finally drawn.
+The final plot for the training dataset is below.
+
+![image](https://github.com/user-attachments/assets/33e2c667-410e-4702-a363-bd59a50fa5fb)
+
+As expected in the above plot, the value of "SI" is generally increased by moving forward in the layers, which means that by moving forward in the layers, the output features become more distinguishable. This work shows well the progress and work of the layers of a network.
+
+
+
 
 
